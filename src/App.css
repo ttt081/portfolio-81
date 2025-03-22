@@ -1,38 +1,181 @@
-.App {
-  text-align: center;
-}
+@import 'bootstrap/dist/css/bootstrap.min.css';
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* Main App Background */
+.app {
+  background: linear-gradient(145deg, #1a1a2e, #16213e);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #f8f9fa;
 }
 
-.App-link {
-  color: #61dafb;
+/* Card Styling */
+.custom-card {
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Social Icons */
+.social-icon {
+  font-size: 1.5rem;
+  color: #ffb400;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #ff6b6b;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 4rem 0;
+}
+
+/* Button Primary */
+.btn-primary {
+  background-color: #ffb400;
+  border: none;
+  color: #16213e;
+}
+
+.btn-primary:hover {
+  background-color: #ff6b6b;
+  color: #ffffff;
+}
+
+/* Skills Section */
+.skills-section {
+  padding: 2rem 0;
+}
+
+.skill-card {
+  background: #0f3460 !important;
+  border: 1px solid #23395d;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card h5 {
+  color: #ffb400;
+  font-weight: 600;
+}
+
+/* Skill Icons */
+.skill-icon {
+  color: #ff6b6b;
+  font-size: 1.4rem;
+}
+
+.skill-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.skill-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #f8f9fa;
+}
+
+.skill-list li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ffb400;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.skill-list strong {
+  color: #ffb400;
+  font-weight: 600;
+}
+
+/* Contact Info */
+#contact {
+  background-color: #0a1128 !important; /* Light gold */
+  padding: 2rem;
+  border-radius: 12px;
+  color: #ffd23f; /* Dark gold text for contrast */
+  border: 1px solid #f7dc6f;
+}
+
+#contact h3,
+#contact h5 {
+  color: #ffd23f; /* Slightly darker gold */
+}
+
+#contact p {
+  color: #f2e8cf;
+}
+
+.contact-info {
+  background: #14213d;
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: #ffd23f;
+}
+
+
+.about-section {
+  background-color: #d4edda !important; /* Light green */
+  padding: 2rem;
+  border-radius: 12px;
+  color: #155724; /* Dark green text for contrast */
+  border: 1px solid #c3e6cb;
+}
+
+.about-section h2 {
+  color: #0d4824; /* Slightly darker green for the heading */
+}
+
+.about-section p {
+  color: #155724;
+}
+
+/* Experience Section */
+.experience-card {
+  background: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.experience-item h4 {
+  color: #004b23;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.company {
+  color: #00171f;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.duration {
+  color: #00171f;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.experience-description {
+  color: #00171f;
+  margin: 1rem 0;
+}
+
+.experience-list {
+  padding-left: 1.5rem;
+  color: #00171f;
+}
+
+.experience-list li {
+  margin-bottom: 0.5rem;
 }
